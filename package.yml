@@ -1,16 +1,19 @@
 name       : cairo-dock
 version    : 3.4.1
-release    : 3
+release    : 4
 source     :
     - https://github.com/Cairo-Dock/cairo-dock-core/archive/3.4.1.tar.gz : ca9b5769f60165b09d5cf2cae3c55fcc62fed19a279e8a279a0619f4189b4e00
 license    :
     - LGPL-2.0
     - GPL-3.0
+component  : desktop.util
 summary    : Cairo-Dock
 description: |
     Cairo-Dock is a desktop interface that takes the shape of docks, desklets, panel, etc
 builddeps  :
+    - pkgconfig(dbus-glib-1)
     - pkgconfig(cairo)
+    - pkgconfig(libcurl)
     - pkgconfig(librsvg-2.0)
     - pkgconfig(gl)
     - pkgconfig(glu)
